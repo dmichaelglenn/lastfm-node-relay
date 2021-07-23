@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const rateLimit = require("express-rate-limit");
 const cors = require("cors");
 const app = express();
-const port = $PORT;
+const port = process.env.PORT || 3000;
 
 
 app.use(cors());
